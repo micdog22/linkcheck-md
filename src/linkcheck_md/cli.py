@@ -173,7 +173,7 @@ def format_text(report: Report, color: bool = False) -> str:
         width = len(str(max(r.line for r in results)))
         for result in sorted(results, key=lambda r: r.line):
             label = paint("ERRO ", "31;1") if result.status == BROKEN else paint("AVISO", "33;1")
-            lines.append(f"  {str(result.line).rjust(width)}: {label}  {result.target} — {result.reason}")
+            lines.append(f"  {str(result.line).rjust(width)}: {label}  {result.target}: {result.reason}")
         lines.append("")
     if not lines:
         lines.append(paint("Nenhum link quebrado.", "32;1"))

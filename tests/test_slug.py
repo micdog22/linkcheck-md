@@ -31,7 +31,7 @@ class SlugifyTest(unittest.TestCase):
         self.assertEqual(anchor("Fim 🎉"), "fim-")
 
     def test_dashes_other_than_hyphen_are_removed(self):
-        self.assertEqual(anchor("Antes — depois"), "antes--depois")
+        self.assertEqual(anchor("Antes \u2014 depois"), "antes--depois")
 
     def test_inline_code_links_and_emphasis(self):
         self.assertEqual(anchor("Usando `npm install`"), "usando-npm-install")

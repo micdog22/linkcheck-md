@@ -53,8 +53,8 @@ class CliTest(unittest.TestCase):
         self.assertEqual(code, 1)
         lines = out.splitlines()
         self.assertEqual(lines[0], "README.md")
-        self.assertEqual(lines[1], "  3: ERRO   docs/nada.md — arquivo não existe")
-        self.assertEqual(lines[2], "  4: ERRO   #sumiu — âncora #sumiu não encontrada neste arquivo")
+        self.assertEqual(lines[1], "  3: ERRO   docs/nada.md: arquivo não existe")
+        self.assertEqual(lines[2], "  4: ERRO   #sumiu: âncora #sumiu não encontrada neste arquivo")
         self.assertIn("2 quebrados", out)
         self.assertIn("1 ignorado", out)
 

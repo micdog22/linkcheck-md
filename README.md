@@ -1,4 +1,4 @@
-# linkcheck-md — encontre links quebrados na sua documentação Markdown (Python)
+# linkcheck-md: encontre links quebrados na sua documentação Markdown (Python)
 
 Documentação envelhece: páginas saem do ar, arquivos mudam de nome, títulos são reescritos e aquela âncora `#instalação` deixa de existir. O **linkcheck-md** lê seus arquivos Markdown, encontra todos os links e confere cada um: URLs na internet, arquivos do próprio repositório e âncoras de seções, calculadas com as mesmas regras do GitHub (acentos incluídos).
 
@@ -36,12 +36,12 @@ Exemplo de saída:
 
 ```
 README.md
-  12: ERRO   https://example.com/pagina-antiga — HTTP 404 (não encontrado)
-  30: ERRO   docs/instalacao.md — arquivo não existe
-  41: AVISO  http://example.org — redirecionamento permanente (301) para https://example.org/
+  12: ERRO   https://example.com/pagina-antiga: HTTP 404 (não encontrado)
+  30: ERRO   docs/instalacao.md: arquivo não existe
+  41: AVISO  http://example.org: redirecionamento permanente (301) para https://example.org/
 
 docs/guia.md
-   7: ERRO   #configuracao — âncora #configuracao não encontrada neste arquivo
+   7: ERRO   #configuracao: âncora #configuracao não encontrada neste arquivo
 
 Resumo: 4 arquivos, 57 links verificados, 3 quebrados, 1 aviso, 2 ignorados.
 ```
@@ -114,4 +114,4 @@ Issues e pull requests são bem-vindos.
 
 ## Licença
 
-MIT — veja [LICENSE](LICENSE).
+MIT. Veja [LICENSE](LICENSE).
