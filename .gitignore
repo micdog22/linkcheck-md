@@ -1,0 +1,11 @@
+.DS_Store
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+coverage/
+.coverage

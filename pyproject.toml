@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkcheck-md"
+version = "1.0.0"
+description = "Encontre links quebrados na sua documentação Markdown: URLs, arquivos locais e âncoras."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["markdown", "links", "documentação", "link-checker", "ci"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.urls]
+Homepage = "https://github.com/micdog22/linkcheck-md"
+Issues = "https://github.com/micdog22/linkcheck-md/issues"
+
+[project.scripts]
+linkcheck-md = "linkcheck_md.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
